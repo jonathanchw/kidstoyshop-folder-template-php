@@ -16,10 +16,10 @@
                     <div class="col banner-wrapper">
                         <div class="head-title">
                             <h1 class="banner-heading-color">
-                                <span>{{ $content -> top_banner_title}}</span>
+                                <span>{{ $content -> top_banner_title ?? ''}}</span>
                             </h1>
                             <p class="banner-tagline-color">
-                                <span>{{ $content -> top_banner_description}}</span>
+                                <span>{{ $content -> top_banner_description ?? ''}}</span>
                             </p>
                             <a href="/products" class="btn btn-primary mt-3 arrow position-relative banner-btn-color">
                                 Select Product <img src="./images/design/shape1.png" alt="" />
@@ -41,8 +41,8 @@
                 <div class="col-12 col-md-6 left-col h-100">.</div>
                 <div class="col-12 col-md-6 h-100 d-flex flex-column justify-content-center">
                     <div class="about-data">
-                        <h2>{{ $content -> welcome_banner_title}}</h2>
-                        <p><span>{{ $content -> welcome_description}}</span></p>
+                        <h2>{{ $content -> welcome_banner_title ?? ''}}</h2>
+                        <p><span>{{ $content -> welcome_description ?? ''}}</span></p>
                         <a href="/products" class="btn btn-primary mt-3 arrow position-relative banner-btn-color">
                             Select Product <img src="./images/design/shape1.png" alt="" />
                             <img src="./images/design/shape2.png" alt="" />
@@ -61,17 +61,17 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="box-col-wrap">
                         <i class="far fa-truck"></i>
-                        <h3>USA Wide Delivery</h3>
-                        <p>We ship our products anywhere in America</p>
+                        <h3>{{ $content -> benefits_key_title_1 ?? 'USA Wide Delivery'}}</h3>
+                        <p>{{ $content -> benefits_key_description_1 ?? 'We ship our products anywhere in America'}}</p>
                         <img src="./images/design/support-shape1.png" alt="" />
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="box-col-wrap">
                         <i class="far fa-user-headset"></i>
-                        <h3>Online Support</h3>
+                        <h3>{{ $content -> benefits_key_title_2 ?? 'Online Support'}}</h3>
                         <p>
-                            Very responsive customer support to help solve your issues
+                        {{ $content -> benefits_key_description_2 ?? 'Very responsive customer support to help solve your issues'}}
                         </p>
                         <img src="./images/design/support-shape1.png" alt="" />
                     </div>
@@ -79,8 +79,8 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="box-col-wrap">
                         <i class="far fa-coins"></i>
-                        <h3>Hottest Deals</h3>
-                        <p>We provide amazing offers on our products</p>
+                        <h3>{{ $content -> benefits_key_title_3 ?? 'Hottest Deals'}}</h3>
+                        <p>{{ $content -> benefits_key_description_3 ?? 'We provide amazing offers on our products'}}</p>
                         <img src="./images/design/support-shape1.png" alt="" />
                     </div>
                 </div>

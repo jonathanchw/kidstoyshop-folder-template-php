@@ -8,7 +8,7 @@
                     <div class="spacer primary-background-color"></div>
                     <!--/Title-->
                     <div class="footer-about">
-                        <h2><span>{{ $content -> store_name }}</span></h2>
+                        <h2><span>{{ $content -> store_name ?? '' }}</span></h2>
                     </div>
                 </div>
             </div>
@@ -91,10 +91,10 @@
         <div class="copyright text-center">
             <div class="container">
                 <p>
-                    &copy; <span class="js_website-year">{!! empty($page->corporation->year) ? '' : nl2br(e($page->corporation->website-year)) !!}</span>
-                    <span class="js_website-name">{{ $content -> store_name}} </span>
+                    &copy; <span>{!! empty($page->corporation->year) ? '' : nl2br(e($page->corporation->website-year)) !!}</span>
+                    <span>{{$page->corporation->name}} </span>
                 </p>
-                <div class="corp"><span class="js_website-corp"></span>{{$page->corporation->name}}</div>
+                <div class="corp"><span></span>{{$page->corporation->name}}</div>
             </div>
         </div>
     </div>

@@ -18,14 +18,14 @@
             through Friday.
         </p>
         <p><b>Contact Info</b></p>
-        <p><span class="js_website-name"></span></p>
-        <p><span class="js_website-corp"></span></p>
-        <p><a href="" class="js_website-email"></a></p>
-        <p><a href="" class="js_website-phone"></a></p>
+        <p><span class="js_website-name">{{$page->corporation->name ?? ''}} </span></p>
+        <p><span class="js_website-corp"></span>{{$page->corporation->name ?? ''}}</p>
+        <p><a href="" class="js_website-email">{!! empty($page->support_email) ? '' : nl2br(e($page-> support_email)) !!}</a></p>
+        <p><a href="" class="js_website-phone">{!! empty($page->support_phone) ? '' : nl2br(e($page->support_phone)) !!}</a></p>
         <p><span class="js_website-address"></span></p>
         <p><b>Returns</b></p>
         <p><span class="js_website-return-partner">Fulfillmentx LLC</span></p>
-        <p><span class="js_website-return-address"></span></p>
+        <p><span class="js_website-return-address">{!! empty($page->support_return_address) ? '' : nl2br(e($page->support_return_address)) !!}</span></p>
         <!-- <p><b>Cancellations</b></p>
    <p>You can cancel your recurring order anytime. Click <a href="cancellation.html" taget="_blank" >here</a> to submit your product cancellation request.</p> -->
     </div>

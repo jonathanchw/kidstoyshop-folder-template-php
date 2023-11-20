@@ -30,7 +30,7 @@
           <div class="top-right d-flex align-items-center justify-content-end">
             <div class="right-phone me-3">
               <i class="fal fa-phone-volume me-1 top-nav-icon-color"></i>
-              <a href="">{{$page->support_phone}}</a>
+              <a href="">{{$page->support_phone ?? ''}}</a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="navbar">
-            <a class="navbar-brand nav-text-color" href="/"><span>{{$content->store_name}}</span></a>
+            <a class="navbar-brand nav-text-color" href="/"><span>{{$content->store_name ?? ''}}</span></a>
           </div>
         </div>
         <div class="col-lg-5 d-flex align-items-center justify-content-end">
@@ -106,12 +106,7 @@
     <div class="max-wid">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-8 alooo">
-            <div class="navbar">
-              <a class="navbar-brand nav-text-color" href="/"><span class="js_website-name">{{$page->corporation->name}}</span></a>
-            </div>
-          </div>
-          <div class="col-4 alooo2 d-flex align-items-center justify-content-center">
+         <div class="col-4 alooo2 d-flex align-items-center justify-content-center">
             <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <div class="one"></div>
               <div class="two"></div>
