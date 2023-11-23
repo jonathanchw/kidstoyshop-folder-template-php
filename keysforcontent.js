@@ -82,28 +82,40 @@
       "placeholder": "We provide amazing offers on our products"
     },
     {
+      "key": "title_color",
+      "type": "color",
+      "label": "title color",
+      "caption": "Store name color"
+    },
+    {
       "key": "primary_color",
       "type": "color",
-      "label": "Primary color",
-      "caption": "Buttons, etc"
+      "label": "primary color",
+      "caption": "Header and nav-bar color"
+    },
+    {
+      "key": "secondary_color",
+      "type": "color",
+      "label": "secondary color",
+      "caption": "topbar and footer color"
+    },
+    {
+      "key": "primary_text_color",
+      "type": "color",
+      "label": "primary text color",
+      "caption": "header and nav-bar text color"
+    },
+    {
+      "key": "secondary_text_color",
+      "type": "color",
+      "label": "secondary text color",
+      "caption": "topbar and footer text color"
     },
     {
       "key": "background_color",
       "type": "color",
-      "label": "Background color",
+      "label": "background color",
       "caption": "Background of html whole document"
-    },
-    {
-      "key": "text_color",
-      "type": "color",
-      "label": "Text color",
-      "caption": "Titles and paragraphs"
-    },
-    {
-      "key": "footer_color",
-      "type": "color",
-      "label": "Footer color",
-      "caption": "Footer color"
     }
   ]
   

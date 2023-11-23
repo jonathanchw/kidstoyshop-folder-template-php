@@ -30,7 +30,7 @@
           <div class="top-right d-flex align-items-center justify-content-end">
             <div class="right-phone me-3">
               <i class="fal fa-phone-volume me-1 top-nav-icon-color"></i>
-              <a href="">{{$page->support_phone ?? ''}}</a>
+              <a href="javascript:void(0);">{{$page->support_phone ?? ''}}</a>
             </div>
           </div>
         </div>

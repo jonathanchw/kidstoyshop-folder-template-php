@@ -28,12 +28,12 @@
                         </li>
                         <li class="d-flex">
                             <div class="info">
-                                <a href="">{{ $page->support_phone ?? '' }}</a>
+                                <a href="javascript:void(0);">{{ $page->support_phone ?? '' }}</a>
                             </div>
                         </li>
                         <li class="d-flex">
                             <div class="info">
-                                <a href="">{{ $page->support_emai ?? '' }}</a>
+                                <a href="javascript:void(0);">{{ $page->support_emai ?? '' }}</a>
                             </div>
                         </li>
                     </ul>
